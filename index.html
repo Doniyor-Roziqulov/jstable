@@ -3,9 +3,92 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>6-dars</title>
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
-        <script src="./app.js"></script>
+        <div class="container">
+            <button type="button" class="btn__open buttons">START</button>
+        </div>
+
+        <div class="popap">
+            <div class="overlay"></div>
+            <form class="model">
+                <input
+                    required
+                    type="text"
+                    class="modul__name"
+                    placeholder="Enter fname..." />
+                <input
+                    required
+                    type="text"
+                    class="modul__username modul__lname"
+                    placeholder="Enter lname..." />
+                <input
+                    required
+                    type="number"
+                    class="modul__username modul__age"
+                    placeholder="Enter age..." />
+                <input
+                    required
+                    type="text"
+                    class="modul__username modul__address"
+                    placeholder="Enter address..." />
+                <div class="option__box">
+                    <p>IELTS score :</p>
+                    <select required class="select__box" name="score">
+                        <option value="">Add</option>
+                        <option value="0.5">0.5</option>
+                        <option value="1.0">1.0</option>
+                        <option value="1.5">1.5</option>
+                        <option value="2.0">2.0</option>
+                        <option value="2.5">2.5</option>
+                        <option value="3.0">3.0</option>
+                        <option value="3.5">3.5</option>
+                        <option value="4.0">4.0</option>
+                        <option value="4.5">4.5</option>
+                        <option value="5.0">5.0</option>
+                        <option value="5.5">5.5</option>
+                        <option value="6.0">6.0</option>
+                        <option value="6.5">6.5</option>
+                        <option value="7.0">7.0</option>
+                        <option value="7.5">7.5</option>
+                        <option value="8.0">8.0</option>
+                        <option value="8.5">8.5</option>
+                        <option value="9.0">9.0</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <input
+                        required
+                        type="password"
+                        class="modul__password"
+                        placeholder="Enter password..." />
+                    <button class="eye__password" type="button">
+                        <p>🙈</p>
+                    </button>
+                </div>
+                <button class="buttons" type="submit">Regester</button>
+                <button type="button" class="btn__close buttons">Cancel</button>
+            </form>
+        </div>
+        <div class="container">
+            <h1 class="title">Students' IELTS scores ⚠️</h1>
+            <table>
+                <thead class="table__head">
+                    <tr class="table__smhead">
+                        <th>Id</th>
+                        <th>Fname</th>
+                        <th>Lname</th>
+                        <th>Age</th>
+                        <th>Address</th>
+                        <th>Score</th>
+                        <th>Password</th>
+                    </tr>
+                </thead>
+                <tbody class="table__body"></tbody>
+            </table>
+        </div>
+        <script type="module" src="./app.js"></script>
     </body>
 </html>
